@@ -15,15 +15,29 @@ const apiKey = import.meta.env.API_KEY;
     </h3>
     <div class="px-8 text-brown text-lg font-bold">
       <h4>WEDNESDAYS - 7:30pm</h4>
-      <p>Boundary Bar</p>
-      <iframe
-        width="300"
-        height="300"
-        style="border:0"
-        loading="lazy"
-        allowfullscreen
-        src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJle8bmQq4h0gR04MddHXw3n8&key=${apiKey}`}>
-      </iframe>
+      <p class="">Boundary Bar</p>
+      <div class="border-4 border-brown inline-block">
+        <iframe
+          width="300"
+          height="300"
+          style="border:0"
+          loading="lazy"
+          allowfullscreen
+          src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJle8bmQq4h0gR04MddHXw3n8&key=${apiKey}`}>
+        </iframe>
+      </div>
+      <h4 class="pt-6">THURSDAYS - 7:30pm</h4>
+      <p class="">Basils</p>
+      <div class="border-4 border-brown inline-block">
+        <iframe
+          width="300"
+          height="300"
+          style="border:0"
+          loading="lazy"
+          allowfullscreen
+          src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE-38VinHh0gROLv_-vHd1g4&key=${apiKey}`}>
+        </iframe>
+      </div>
     </div>
   </main>
 </Layout>
