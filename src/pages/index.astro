@@ -1,10 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+const apiKey = import.meta.env.API_KEY;
 ---
 
 <Layout title="Chuggsy's Quizzes">
   <main>
     <Header />
+    <h2 class="font-extrabold text-brown text-center text-4xl py-6">
+      SO YOU THINK YOUR CLEVER?
+    </h2>
+    <h3 class="py-6 px-6 font-extrabold text-brown text-2xl">
+      Where to find us!
+    </h3>
+    <div class="px-8 text-brown text-lg font-bold">
+      <h4>WEDNESDAYS - 7:30pm</h4>
+      <p>Boundary Bar</p>
+      <iframe
+        width="300"
+        height="300"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJle8bmQq4h0gR04MddHXw3n8&key=${apiKey}`}>
+      </iframe>
+    </div>
   </main>
 </Layout>
