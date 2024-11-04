@@ -7,37 +7,46 @@ const apiKey = import.meta.env.API_KEY;
 <Layout title="Chuggsy's Quizzes">
   <main>
     <Header />
-    <h2 class="font-extrabold text-brown text-center text-4xl py-6">
-      SO YOU THINK YOUR CLEVER?
+    <h2 class="font-extrabold font-afacad text-brown text-center text-4xl py-6">
+      SO YOU THINK YER CLEVER?
     </h2>
-    <h3 class="py-6 px-6 font-extrabold text-brown text-2xl">
+    <h3
+      class="flex justify-center font-afacad py-6 px-6 font-extrabold text-brown text-3xl">
       Where to find us!
     </h3>
-    <div class="px-8 text-brown text-lg font-bold">
-      <h4>WEDNESDAYS - 7:30pm</h4>
-      <p class="">Boundary Bar</p>
-      <div class="border-4 border-brown inline-block">
-        <iframe
-          width="300"
-          height="300"
-          style="border:0"
-          loading="lazy"
-          allowfullscreen
-          src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJle8bmQq4h0gR04MddHXw3n8&key=${apiKey}`}>
-        </iframe>
+    <div class="flex flex-wrap justify-center text-brown text-lg font-bold">
+      <div class="px-3">
+        <div class="border-4 border-brown inline-block">
+          <iframe
+            width="300"
+            height="250"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJle8bmQq4h0gR04MddHXw3n8&key=${apiKey}`}>
+          </iframe>
+          <h4 class="font-afacad text-center pt-3">WEDNESDAYS - 7:30pm</h4>
+          <p class="font-afacad text-center">Boundary Bar</p>
+        </div>
       </div>
-      <h4 class="pt-6">THURSDAYS - 7:30pm</h4>
-      <p class="">Basils</p>
-      <div class="border-4 border-brown inline-block">
-        <iframe
-          width="300"
-          height="300"
-          style="border:0"
-          loading="lazy"
-          allowfullscreen
-          src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE-38VinHh0gROLv_-vHd1g4&key=${apiKey}`}>
-        </iframe>
+      <div class="px-3">
+        <div class="border-4 border-brown inline-block">
+          <h4 class="font-afacad text-center">THURSDAYS - 7:30pm</h4>
+          <p class="font-afacad text-center">Basils</p>
+          <iframe
+            width="300"
+            height="250"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            src={`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE-38VinHh0gROLv_-vHd1g4&key=${apiKey}`}>
+          </iframe>
+        </div>
       </div>
     </div>
+    <h3
+      class="flex justify-center py-6 px-6 font-extrabold text-brown text-3xl">
+      Looking to start your own Quiz?
+    </h3>
   </main>
 </Layout>
